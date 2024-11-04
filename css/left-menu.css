@@ -1,0 +1,190 @@
+@font-face {
+    font-family: 'TT Lakes';
+    src: url('../fonts/TTLakes/TTLakes-Medium.eot');
+    src: url('../fonts/TTLakes/TTLakes-Medium.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/TTLakes/TTLakes-Medium.woff') format('woff'),
+    url('../fonts/TTLakes/TTLakes-Medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+*{
+    padding:0;
+    margin:0;
+}
+
+button{
+    border: none;
+}
+
+body{
+    font-size: 16px;
+    line-height: 24px;
+    font-family: "TT Lakes";
+    font-weight: 500;
+    font-style: normal;
+}
+
+.container{
+    width: 728px;
+    height: 1024px;
+}
+
+.left-menu{
+    width:320px;
+    height: 1024px;
+    background-color: #ffffff;
+    box-shadow: 16px 0px 52px 0px #0E185033,
+                -2px 0px 4px 0px #454F7E05;
+
+    position: relative;
+}
+
+.left-menu .header{
+    display: inline-block;
+}
+
+.header:hover{
+    opacity: 0.5;
+    transform: rotate(360deg) scale(1.2);
+    transition: all 0.2s ease-in-out;
+}
+
+.left-menu .header:first-child{ 
+    background-image: url(../image/burger.svg);
+
+    float:left;
+    margin-top: 23px;
+    margin-left: 24px;
+}
+
+.left-menu .header:nth-child(2){
+    width: 97px;
+    height: 51px;
+
+    background: url(../image/logo.svg) center center no-repeat;
+
+    margin-top: 19px;
+    margin-left: 17px;
+    margin-bottom: 46px;
+    opacity: 1;
+    transform: none;
+    transition: none;
+}
+
+.left-menu .header:nth-child(3){
+    background-image: url(../image/search.svg);
+
+    float: right;
+    margin-top: 23px;
+    margin-right: 24px;
+}
+
+.content a{
+    text-decoration: none;
+    color: #1B1C21;
+    letter-spacing: -0.2px;
+}
+
+.main-menu{
+    list-style: none;
+}
+.main-menu li{
+    margin-bottom: 32px;
+    margin-left: 24px;
+}
+
+.main-menu li:last-child{
+    margin-bottom: 268px;
+}
+
+.main-menu__active a{
+    color: #7E7E82;
+}
+
+.main-menu a:hover{
+    transition: all 0.5s ease-out;
+    color:aquamarine;
+    
+}
+
+
+.content__contacts
+{
+    margin-left: 24px;
+    margin-bottom: 40px;
+}
+.content__contacts .content__main{
+    display: inline-block;
+    margin-right: 16px;
+}
+
+.content__main:hover{
+    opacity: 0.5;
+    transform: rotate(360deg) scale(1.2);
+    transition: all 0.2s ease-in-out;
+}
+
+.content__contacts .content__main:first-child{
+
+    background-image: url(../image/phone.svg);
+}
+
+.content__contacts .content__main:nth-child(2){
+
+    background-image: url(../image/chat.svg);
+}
+
+.content__contacts .content__main:nth-child(3){
+    margin-right: 0;
+
+    background-image: url(../image/profile.svg);
+}
+
+.content__email{
+    display: flex;
+    color: #1B1C21;
+    letter-spacing: -0.2px;
+    margin-bottom: 12px;
+}
+
+.content__number{
+    color: #1B1C21;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: -0.6px;
+    text-align: left;
+    font-weight: bold;
+
+}
+
+.content__lang{
+    margin-left: 24px;
+    color: #1B1C21;
+
+}
+
+.content__lang .content__lang_active{
+    color: #7E7E82;
+}
+.content__lang button{
+    margin-right: 7px;
+}
+
+.content__lang button:hover{
+    transition: all 0.5s ease-out;
+    color:aquamarine;
+}
+
+.lang{
+    background-color:#ffffff;
+}
+
+.btn{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: #FF3E79;
+}
