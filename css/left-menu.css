@@ -15,6 +15,11 @@
 
 button{
     border: none;
+    font-size: 16px;
+    line-height: 24px;
+    font-family: "TT Lakes";
+    font-weight: 500;
+    font-style: normal;
 }
 
 body{
@@ -160,8 +165,6 @@ body{
 
 .content__lang{
     margin-left: 24px;
-    color: #1B1C21;
-
 }
 
 .content__lang .content__lang_active{
@@ -169,6 +172,7 @@ body{
 }
 .content__lang button{
     margin-right: 7px;
+    color: #1B1C21;
 }
 
 .content__lang button:hover{
