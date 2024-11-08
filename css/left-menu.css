@@ -11,6 +11,7 @@
 *{
     padding:0;
     margin:0;
+    box-sizing: border-box;
 }
 
 button{
@@ -32,12 +33,12 @@ body{
 
 .container{
     width: 728px;
-    height: 1024px;
+    height: 100%;
 }
 
 .left-menu{
     width:320px;
-    height: 1024px;
+    height: 100%;
     background-color: #ffffff;
     box-shadow: 16px 0px 52px 0px #0E185033,
                 -2px 0px 4px 0px #454F7E05;
@@ -85,6 +86,12 @@ body{
     margin-right: 24px;
 }
 
+.content{
+    display: inline-flex;
+    flex-direction: column;
+}
+
+
 .content a{
     text-decoration: none;
     color: #1B1C21;
@@ -93,14 +100,14 @@ body{
 
 .main-menu{
     list-style: none;
+    margin-bottom: 268px;
 }
 .main-menu li{
     margin-bottom: 32px;
     margin-left: 24px;
 }
-
 .main-menu li:last-child{
-    margin-bottom: 268px;
+    margin-bottom: 0;
 }
 
 .main-menu__active a{
@@ -112,6 +119,17 @@ body{
     color:aquamarine;
     
 }
+
+.main-menu__active::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 4px;
+    height: 32px;
+    border-radius: 0 25px 25px 0;
+    background: #41F6D7;
+}
+
 
 
 .content__contacts
@@ -165,6 +183,7 @@ body{
 
 .content__lang{
     margin-left: 24px;
+    margin-bottom: 32px;
 }
 
 .content__lang .content__lang_active{
@@ -192,3 +211,5 @@ body{
     background-position: center center;
     background-color: #FF3E79;
 }
+
+
